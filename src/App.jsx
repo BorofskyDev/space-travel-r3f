@@ -8,6 +8,9 @@ function App() {
   return (
     <div className='App'>
       <Canvas>
+        
+          <Home />
+        
         <Stars
           radius={100}
           depth={70}
@@ -17,8 +20,6 @@ function App() {
           fade
           speed={1}
         />
-        {/* <Earth /> */}
-        <Home />
       </Canvas>
       <Navbar />
     </div>
