@@ -30,8 +30,8 @@ function Navbar() {
           <h3 className='Navbar__header'>
             SOLIT
             <br />
-            <span>Space Travel</span>
           </h3>
+            <p className='Navbar__header--subtitle'>Space Travel</p>
           <ul className='Navbar__items'>
             <li className='Navbar__item'>
               <a href='#' className='Navbar__item--link'>

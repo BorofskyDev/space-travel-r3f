@@ -1,6 +1,6 @@
 .Navbar {
   cursor: pointer;
-  z-index: 1000;
+  //   z-index: 1000;
   &__trigger {
     &--logo {
       position: absolute;
@@ -10,6 +10,11 @@
       width: 3.75em;
       border-radius: 50%;
       overflow: hidden;
+      transition: all 500ms ease;
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 1em 0.0625em hsl(var(--clr-accent)), 0 0 2em 0.5em hsl(var(--clr-light));
+      }
     }
   }
 
@@ -35,6 +40,22 @@
       transform: rotate(45deg);
     }
   }
+
+  &__header {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.55em;
+    font-weight: 500;
+    line-height: 1.2rem;
+    letter-spacing: 0.125em;
+
+    &--subtitle {
+      font-size: 0.875em;
+      text-align: center;
+      padding-bottom: 1em;
+    }
+  }
+
   .Navbar__menu.active {
     opacity: 1;
     visibility: visible;
