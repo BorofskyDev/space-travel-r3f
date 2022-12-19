@@ -1,7 +1,7 @@
 .Navbar {
-  cursor: pointer;
-  //   z-index: 1000;
-  &__trigger {
+    
+    &__trigger {
+      cursor: pointer;
     &--logo {
       position: absolute;
       top: 1.25em;
@@ -11,9 +11,11 @@
       border-radius: 50%;
       overflow: hidden;
       transition: all 500ms ease;
+
       &:hover,
       &:focus {
-        box-shadow: 0 0 1em 0.0625em hsl(var(--clr-accent)), 0 0 2em 0.5em hsl(var(--clr-light));
+        box-shadow: 0 0 1em 0.0625em hsl(var(--clr-accent)),
+          0 0 2em 0.5em hsl(var(--clr-light));
       }
     }
   }
@@ -53,6 +55,28 @@
       font-size: 0.875em;
       text-align: center;
       padding-bottom: 1em;
+    }
+  }
+
+  &__items {
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  &__item {
+    padding: 0.5em 0;
+    border-top: 0.0625em solid hsl(var(--clr-light));
+
+    &--link {
+        color: hsl(var(--clr-white));
+        text-transform: uppercase;
+        transition: all 500ms ease;
+
+        &:hover,
+        &:focus {
+            color: hsl(var(--clr-accent));
+            border-bottom: 0.0625em solid hsl(var(--clr-accent));
+        }
     }
   }
 
