@@ -26,7 +26,7 @@ function Navbar() {
         >
           <img src={logo} alt='SOLIT Logo' className='Navbar__trigger--logo' />
         </div>
-        <nav className={`Navbar__menu ${open ? 'active' : 'inactive'}`}>
+        <nav className={`Navbar__menu dark-glass ${open ? 'active' : 'inactive'}`}>
           <h3 className='Navbar__header'>
             SOLIT
             <br />

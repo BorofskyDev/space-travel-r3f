@@ -1,6 +1,8 @@
 import { Html, Stars } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
+import Earth from './components/home/Earth'
 import Navbar from './components/navbar/Navbar'
+import Home from './pages/Home'
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           fade
           speed={1}
         />
+        {/* <Earth /> */}
+        <Home />
       </Canvas>
       <Navbar />
     </div>
